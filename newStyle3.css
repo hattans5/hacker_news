@@ -1,0 +1,67 @@
+input:focus{
+
+background-color: #8080EE;
+color: white;
+
+
+
+}
+
+input{
+    padding-right: 70%;
+    
+    height: 5%;
+widows: 90%;
+
+}
+ p{
+ 
+    widows: 90%;
+ }
+
+#B{
+    background-color: #4CAF50;
+    color: white;
+    padding: 3% 4%;
+    padding-bottom: 6%;
+     
+    text-align: center;
+    font-size: 15px;
+     
+   
+  
+}
+
+body{
+
+    background-color: #CFCBCB;
+}
+#main{
+
+    border: 1px solid black;
+   
+    padding-left: 2%;
+    padding-bottom: 5%;
+    margin-top: 0px;
+    margin-bottom: 15%;
+    margin-right: 25%;
+    margin-left: 25%;
+    background-color: white;
+
+}
+
+#Out{
+border: 1px solid white;
+
+color: white;
+margin-right:6%;
+margin-top:2%;
+
+
+}
+textarea{
+
+width: 90%;
+height: 20%;
+
+}
