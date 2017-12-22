@@ -1,33 +1,23 @@
 <?php
+
+// WARNING: NEVER DO THIS IN PRODUCTION
 $servername = "localhost";
 $username = "hattans5";
 $password = "";
 $database = "c9";
 
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = mysqli_connect($servername, $username, $password, $database);
 
-$sql = "SELECT * FROM HackN";
+$sql = "select * from HackN";
 $result = $conn->query($sql);
 
 $all  = array();
-$count=0;
-while($row = $result->fetch_array()){
- // echo $row ;
-  echo "</br>";
-  
-  $all[$count] = $row;
- 
-  $count++;
+
+while($row = mysqli_fetch_assoc($result)){
+   $all[]= $row;
 }
-
- //echo "----------------------------------------------" ;
-
-
-   echo json_encode($all);
+ 
+  echo json_encode($all[1]);
    
-    
-     
-
-
 
 ?>

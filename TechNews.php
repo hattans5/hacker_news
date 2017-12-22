@@ -79,28 +79,21 @@
 
 var g = [];
 
-   var doit = function () {
-var xhttp = new XMLHttpRequest();
+ var doit = function () {
+ var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "./getNews.php", true)
     xhttp.send();
-      
-   
+    
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
-        
-       g = JSON.parse(this.response);
-      
-          console.log(g);
+ 
+       g = JSON.parse(this.responseText);
            done(g);
            } 
         }
    }
-  console.log("IN")
+
      doit();
-
-
-
-
 
     function done(g){
       
