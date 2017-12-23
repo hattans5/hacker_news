@@ -17,7 +17,7 @@ while($row = mysqli_fetch_assoc($result)){
    $all[]= $row;
 }
  
-  echo json_encode($all[1]);
+  echo json_encode($all);
    
 
 ?>
